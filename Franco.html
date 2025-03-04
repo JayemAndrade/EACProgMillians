@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franco</title>
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: url('https://scontent.fcrk1-5.fna.fbcdn.net/v/t1.15752-9/478137058_1364304661417017_6355719550073675334_n.png?stp=dst-png_s2048x2048&_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEPp30TNdmuCxnVqBvEmOBKgoxoWzxbm-iCjGhbPFub6PL-ZuHiA0rHQAqcvETtPuArp6ZhfKrJl-p6ujmm8vZc&_nc_ohc=oNC64YhV1uoQ7kNvgHEapv1&_nc_oc=Adh-4ZOeixRMklMz0n_5HJ_g2AayRx4Hq0H3zbVonmtC6eQevKbQ5v2WqoWoKdDKLF0&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&oh=03_Q7cD1gGQekYT0CMM2842DTE9DyRMforiEkDFTg-L5xA77V9OOA&oe=67DE8E51') 
+                no-repeat center center;    
+            background-size: cover;
+            width: 100vw; /* Sakop ang buong viewport width */
+            height: auto;
+            min-height: 100px; /* Para hindi sobrang nipis */
+            text-shadow: 4px 4px 8px rgba(104, 80, 80, 0.9);
+            box-sizing: border-box; /* Para di lumagpas sa width */
+        }
+        
+        header img {
+            width: 70px; /* Para siguradong parehong laki ang mga logo */
+            height: auto;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav {
+            background-image: linear-gradient(to right, rgb(112, 4, 4), white, blue);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            border: solid red;
+        }
+        nav a {
+            color: rgb(4, 4, 4);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #a81212;
+        }
+        h1 {
+            color: #333;
+            margin-top: 50px;
+            font-size: 2.5em;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        button {
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .change{
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .eac {
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        li {
+            padding: 10px;
+            font-size: 20px;
+            text-align: justify;
+            margin-left: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://www.facebook.com/eac.edu.ph">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/42/Emilio_Aguinaldo_College_seal.svg" alt="eac" width="70" style="padding: 10px;" > </a>
+        <h3 style="padding-top: 20px;"> <a href="Franco.html"style="text-decoration: none; color: red ;">EMILIO AGUINALDO COLLEGE MANILA</a></h3>
+        <a style="margin-left: auto; width: 90px" href="https://www.facebook.com/profile.php?id=100095349012409"><img  src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/475278173_122093559152759792_6446687628662689972_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE9xfURCkVbzA98I8_MeVTTMD7N9SWFVqswPs31JYVWqwdGTgTltDsZ8Oot3MpWT3N0feq_1YjhjHhtn6GRDZ4w&_nc_ohc=UBHh_jYNR3gQ7kNvgHOOcbc&_nc_oc=AdgSvvGFRpXc_o3b-CqGtYNj3-8O394nRd2zjfs9InydkwQZUPjv46hg_pzw6l4-q5A&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=Ab3Uxuon7NiB_h1qu6NudRX&oh=00_AYB6UeXD8cQQn7BcOpGMf6MCQ6vNimWF4KV5SDYnBvIPXA&oe=67CB805F" style="border-radius: 20px;" alt="prog" width="70"></a>
+        <button class="logout-btn" onclick="logoutUser()">Log Out</button>
+    </header>
+    <nav>
+        <a href="Franco.html">Home</a>
+        <a href="Mago.html">About</a>
+        <a href="Gerardo.html">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to PROGMILLIANS!</h1>
+        <h4 style="text-align: justify;">PROGMILLIANS is your gateway to mastering the world of programming languages! Whether you're just starting your coding journey or aiming to sharpen your skills, we provide interactive and engaging content to help you succeed.</h4>
+        <button onclick="changeText()">Click the button to change this text.</button>
+        <p class="change" id="text">ProgMillians</p>
+        <img class="eac" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Emilio_Aguinaldo_College_seal.svg/1200px-Emilio_Aguinaldo_College_seal.svg.png" id="hoverimage" alt="Sample Image"
+             onmouseover="changeImage()"
+             onmouseout="resetImage()"
+             width="300">
+             
+    </section>
+    <h2>What You’ll Find on PROGMILLIANS:</h2>
+    <hr>
+    <li><b>Comprehensive Programming Language Guides – </b>Learn the fundamentals and advanced concepts of popular languages like Python, C++, Java, JavaScript, and more.</li>
+    <li><b>Hands-on Coding Challenges – </b>Test your skills with real-world coding exercises and problem-solving activities.</li>
+    <li><b>Interactive Tutorials – </b>Follow step-by-step lessons designed to make learning fun and easy.</li>
+    <li><b>Programming Quizzes – </b>Challenge yourself with quizzes that test your knowledge and help reinforce key concepts.</li>
+    <li><b>Community and Resources – </b>Connect with fellow programmers, share insights, and explore additional learning materials.</li>
+    <li>Join <b> PROGMILLIANS</b> today and take your programming skills to the next level!</li>
+
+
+    <script>
+        function changeText() {
+            document.getElementById("text").innerHTML = "Emilio Aguinaldo College🎉";
+        }
+        function changeImage() {
+            document.getElementById("hoverimage").src = "https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/475278173_122093559152759792_6446687628662689972_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE9xfURCkVbzA98I8_MeVTTMD7N9SWFVqswPs31JYVWqwdGTgTltDsZ8Oot3MpWT3N0feq_1YjhjHhtn6GRDZ4w&_nc_ohc=UBHh_jYNR3gQ7kNvgHOOcbc&_nc_oc=AdgSvvGFRpXc_o3b-CqGtYNj3-8O394nRd2zjfs9InydkwQZUPjv46hg_pzw6l4-q5A&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=AQql7UnogNBYQnePW4g9cx5&oh=00_AYAXoArPNW1mbDCDKineraOK_e2vgI7pX5y8_Idlq-Q1xA&oe=67CB805F";
+        }
+        function resetImage() {
+            document.getElementById("hoverimage").src = "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Emilio_Aguinaldo_College_seal.svg/1200px-Emilio_Aguinaldo_College_seal.svg.png";
+        }
+    </script>
+    <script> // Gawa ng LEADER SIR 
+        function checkLoginStatus() {
+            let loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    
+            if (!loggedInUser || !loggedInUser.isLoggedIn) {
+                alert("You must log in first!");
+                window.location.href = "Eurie.html"; // Balik sa login page
+            }
+        }
+    
+        function logoutUser() {
+            localStorage.removeItem("loggedInUser");
+            alert("Logged out successfully!");
+            window.location.href = "Eurie.html"; // Balik sa login page
+        }
+    
+        // ✅ Tumakbo lang ang function kapag fully loaded na ang page
+        window.onload = () => {
+            setTimeout(checkLoginStatus, 500); // Delay para maiwasan ang mabilis na logout
+        };
+    </script>
+</body>
+</html>
